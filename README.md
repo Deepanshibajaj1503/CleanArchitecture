@@ -1,5 +1,12 @@
 # CleanArchitecture
 
+
+![Screenshot](clean_arch.png)
+
+
+
+
+
 ## Is Clean Architecture only MVVM ? 
 
 NO, MVVM is a part of clean architecture. MVVM includes Model, View and ViewModel and in addition to this, Clean architecture has one more layer which is **USE CASES**.
@@ -12,8 +19,9 @@ the more number of ViewModels you have and all your business logic is divided in
 That’s where clean architecture comes into the picture, we use **USE CASES** instead of ViewModels for all our Business logic. 
 
 
-
 Now, we understood why do we need use cases? **But What are Use Cases?**
+
+![Screenshot](usecase_think.png)
 
 Use case is an **_action we can do within a feature_**. 
 
@@ -32,6 +40,8 @@ All the above are USE CASES of a feature.
 2. **Screaming Architecture** : The term “screaming architecture” is used when we can, just by looking at a new project at a glance, get the core idea of what the project does and what it is about. Similarly, Use Case should be made in a way that anyone can understand just by looking at the class name that what it does . For ex. GetUsersUseCase is used to get list of users from a data source. 
 
 
+![Screenshot](usecase.png)
+
 
 
 **HOW SHOULD YOU DIVIDE YOUR PROJECT ?**
@@ -39,7 +49,28 @@ All the above are USE CASES of a feature.
 The code is divided into three separate layers:
 
 1. **Presentation Layer** which includes all UI stuff, Composables, XMLs, Views & ViewModels. 
+
+![Screenshot](presentation_layer.png)
+
+
 2. **Domain Layer** contains our Business Logic (most important our USE CASES) 
+
+![Screenshot](domain_layer.png)
+
+
 3. **Data Layer** contains our data, all our Databases and Repository Implementation.
+
+![Screenshot](data_layer.png)
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+![Screenshot](cleanarchitecture_packages.png)
+
+
+
 
 
